@@ -36,10 +36,10 @@ class CartContent extends StatelessWidget {
         children: <Widget>[
           Text(
             'Total Price',
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.headline6,
           ),
           Text(state.totalPrice,
-              style: Theme.of(context).textTheme.title)
+              style: Theme.of(context).textTheme.headline6)
         ],
       )
     ]);
@@ -61,7 +61,7 @@ class CartContent extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Text(
           ' Empty Cart :(',
-          style: Theme.of(context).textTheme.title,
+          style: Theme.of(context).textTheme.headline6,
         ));
 
     final content =

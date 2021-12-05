@@ -15,7 +15,7 @@ class CartDrawer extends StatelessWidget {
                 child: ListTile(
                   contentPadding: EdgeInsets.zero,
                   leading: IconButton(
-                    icon: Icon(Icons.arrow_back_ios),
+                    icon: const Icon(Icons.arrow_back_ios),
                     onPressed: () {
                       Navigator.of(context).pop();
                     },
@@ -23,10 +23,10 @@ class CartDrawer extends StatelessWidget {
                   title: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Icon(Icons.shopping_cart),
+                      const Icon(Icons.shopping_cart),
                       Text(
                         'Cart',
-                        style: Theme.of(context).textTheme.title,
+                        style: Theme.of(context).textTheme.headline6,
                       )
                     ],
                   ),

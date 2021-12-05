@@ -19,11 +19,11 @@ class HomePage extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     Text('Results for ',
-                        style: Theme.of(context).textTheme.title),
+                        style: Theme.of(context).textTheme.headline6),
                     Text(searchTerm,
                         style: Theme.of(context)
                             .textTheme
-                            .title
+                            .headline6
                             .copyWith(color: Theme.of(context).primaryColor))
                   ],
                 )),

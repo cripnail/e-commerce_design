@@ -33,7 +33,7 @@ class CartContentItem extends StatelessWidget {
     final descriptionWidget = Column(children: <Widget>[
       Text(
         _cartItemState.title,
-        style: Theme.of(context).textTheme.subhead,
+        style: Theme.of(context).textTheme.subtitle1,
         maxLines: 2,
         overflow: TextOverflow.ellipsis,
       ),
@@ -45,13 +45,13 @@ class CartContentItem extends StatelessWidget {
                   decoration: const InputDecoration(labelText: 'Quantity'),
                   keyboardType: TextInputType.number,
                   inputFormatters: [
-                WhitelistingTextInputFormatter.digitsOnly
+                    FilteringTextInputFormatter.digitsOnly
               ])),
           Expanded(
               child: Padding(
                   padding: const EdgeInsets.only(left: 8.0),
                   child: Text(_cartItemState.price,
-                      style: Theme.of(context).textTheme.subhead))),
+                      style: Theme.of(context).textTheme.subtitle1))),
         ],
       )
     ]);
@@ -70,7 +70,7 @@ class CartContentItem extends StatelessWidget {
                       child: imageWidget)),
               Expanded(flex: 3, child: descriptionWidget),
               IconButton(
-                icon: Icon(Icons.clear),
+                icon: const Icon(Icons.clear),
                 onPressed: () => cartBloc.removeCartItemOfCart(_cartItemState),
               )
             ],

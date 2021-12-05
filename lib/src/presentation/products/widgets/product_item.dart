@@ -27,10 +27,10 @@ class ProductItem extends StatelessWidget {
             _productItem.title,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: Theme.of(context).textTheme.body1,
+            style: Theme.of(context).textTheme.bodyText2,
           ),
         ),
-        Text(_productItem.price, style: Theme.of(context).textTheme.headline),
+        Text(_productItem.price, style: Theme.of(context).textTheme.headline5),
         RawMaterialButton(
           child: Text(
             'Add to cart'.toUpperCase(),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shopping_cart_flutter/src/presentation/cart/widgets/cart_counter_badge.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
-  MyAppBar() : preferredSize = Size.fromHeight(kToolbarHeight);
+  MyAppBar() : preferredSize = const Size.fromHeight(kToolbarHeight);
 
   @override
   final Size preferredSize;
@@ -25,7 +25,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
     return Stack(
       children: <Widget>[
         IconButton(
-          icon: Icon(Icons.shopping_cart),
+          icon: const Icon(Icons.shopping_cart),
           onPressed: () {
             Scaffold.of(context).openEndDrawer();
           },

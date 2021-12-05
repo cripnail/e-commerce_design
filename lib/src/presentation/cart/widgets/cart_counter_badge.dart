@@ -39,7 +39,7 @@ class CartCounterBadge extends StatelessWidget {
         ),
         child: Text(
           '$totalItems',
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 13,
           ),

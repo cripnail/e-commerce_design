@@ -8,17 +8,17 @@ const jsonCart = '''[
   {
     "id": "1",
     "image":
-    "https://m.media-amazon.com/images/I/81oKhu2bsgL._AC_UL640_FMwebp_QL65_.jpg",
-    "title": "Element Blazin LS tee Shirt, Hombre",
-    "price": 19.95,
+    "https://m.media-amazon.com/images/I/81ZYZ9yl1hL._AC_UL640_FMwebp_QL65_.jpg",
+    "title": "Element Skater Backpack Mohave 15 Saison",
+    "price": 52.45,
     "quantity": 3
   },
   {
     "id": "2",
     "image":
-    "https://m.media-amazon.com/images/I/81HnHYik58L._AC_UL640_FMwebp_QL65_.jpg",
-    "title": "Element Vertical SS tee Shirt, Hombre",
-    "price": 21.95,
+    "https://m.media-amazon.com/images/I/61-DwEh1zrL._AC_UL640_FMwebp_QL65_.jpg",
+    "title": "Element Indiana Logo N1SSA5ELP9",
+    "price": 18.90,
     "quantity": 1
   }
   ]''';
